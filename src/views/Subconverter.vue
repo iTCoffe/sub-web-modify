@@ -344,6 +344,15 @@ export default {
         backendOptions: [ { value: "https://subapi.zrfme.com" }, { value: "https://1060e98895bedf43d3d738e3b7fc9120a0cbbbcf-15051.dstack-prod8.phala.network" }, { value: "https://subapi.cmliussss.net" }, { value: "https://subapi.fxxk.dedyn.io" }, { value: "https://url.v1.mk" }, { value: "https://sub.d1.mk" }, { value: "https://www.nameless13.com" }, { value: "https://sub.xeton.dev" }, { value: "https://api.wcc.best" }, { value: "https://sub.xjz.im" }, { value: "https://api.sublink.dev" }, { value: "https://api.subcsub.com" } ],
         remoteConfig: [
           {
+            label: "PA规则",
+            options: [
+              {
+                label: "PA_Online_MultiMode 识别多地区 负载均衡(与Github同步)",
+                value: "https://raw.githubusercontent.com/iTCoffe/Loong/lite/ACL4SSR/ACL4SSR_Online_MultiMode.ini"
+              }
+            ]
+          },
+          {
             label: "CM规则",
             options: [
               {
@@ -811,7 +820,7 @@ export default {
   },
 
   created() {
-    document.title = "ZRF.ME | 在线订阅转换工具";
+    document.title = "在线订阅转换工具";
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
@@ -885,7 +894,7 @@ export default {
       }
     },
     tanchuang() {
-      this.$alert(`<div style="text-align:center; font-size: 16px;"><strong>周润发 | 提供维护:</strong> <a href="https://d.zrf.me/tgq" target="_blank" style="color: #409EFF; text-decoration: none;">TG群组</a> <a href="https://d.zrf.me/blog" target="_blank" style="color: #409EFF; text-decoration: none;">Blog</a></div>`, '信息面板', {
+      this.$alert(`<div style="text-align:center; font-size: 16px;"><strong>言氏稗客 | 提供维护:</strong> <a href="https://t.me/sspai_eu" target="_blank" style="color: #409EFF; text-decoration: none;">TG频道</a> <a href="https://5iclub.blogspot.com" target="_blank" style="color: #409EFF; text-decoration: none;">Blog</a></div>`, '信息面板', {
         confirmButtonText: '确定',
         dangerouslyUseHTMLString: true,
         customClass: 'msgbox'
@@ -1305,3 +1314,4 @@ export default {
   display: none !important;
 }
 </style>
+
